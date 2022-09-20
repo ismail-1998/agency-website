@@ -496,13 +496,18 @@ nav li a:hover::after {
 /* End offer ------------------------------------------ */
 
 /* ((3.5)) Start Services ----------------------------- */
+.service {
+  padding: 20px 0;
+}
 
 .service-content {
   display: flex;
   justify-content: space-around;
 }
+
 .service-item {
   width: 500px;
+  padding: 10px;
 }
 
 .service-item .section-header {
@@ -513,7 +518,8 @@ nav li a:hover::after {
   margin: 15px 0 30px 0;
 }
 .service-item .service-item-description {
-  padding: 0 125px 20px 0;
+  margin-bottom: 18px;
+  padding-right: 10px;
   line-height: 1.5;
 }
 
@@ -556,6 +562,13 @@ nav li a:hover::after {
 .service-item-bollets li.active {
   background-color: var(--mainColor);
 }
+
+@media screen and (max-width: 976px) {
+  .service-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /* End Services ---------------------------------- */
 
 /* ((3.6)) Start Number --------------------------- */
@@ -563,16 +576,25 @@ nav li a:hover::after {
   position: relative;
   background-image: url(../images/background/background2.webp);
   height: 340px;
+  max-height: auto;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.number-content {
+.number .center-y {
+  height: 100%;
   display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.number-content {
+   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: auto 0;
+  align-content: center;
 }
+
 .number-content .number-item {
   margin: 20px;
   text-align: center;
@@ -591,6 +613,12 @@ nav li a:hover::after {
 .number-item .number-item-description {
   color: white;
   font-size: 22px;
+}
+
+@media screen and (max-width: 500px) {
+  .number {
+    height: 700px;
+  }
 }
 /* End Number Section */
 
@@ -665,6 +693,7 @@ nav li a:hover::after {
 .testimonial-content {
   display: flex;
 }
+
 .testimonial-item {
   padding: 57px 0;
   color: white;
@@ -686,7 +715,7 @@ nav li a:hover::after {
 }
 
 .testimonial-item p {
-  padding: 0 190px 0 0;
+  padding: 0 30px 0 0;
 }
 /* End Testimonial --------------------------------------------- */
 
@@ -763,18 +792,29 @@ nav li a:hover::after {
   color: var(--mainColor);
 }
 
+@media screen and (max-width: 820px) {
+  .team-content {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 /* End Team ----------------------------------------- */
 
 /* ((3.9)) Start Blog ------------------------------- */
 .blog {
+  padding: 30px 0;
   background-color: var(--grayColor);
 }
 
 .blog-content {
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
 
 .blog-item {
+  width: 320px;
   background-color: white;
   margin: 20px;
 }
@@ -812,6 +852,12 @@ nav li a:hover::after {
   text-decoration: none;
   color: var(--mainColor);
   font-size: 18px;
+}
+
+@media screen and (max-width: 976px) {
+  .blog-content {
+    flex-wrap: wrap;
+  }
 }
 /* End Blog --------------------------------------------- */
 
