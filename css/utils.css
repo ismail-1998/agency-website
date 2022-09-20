@@ -17,6 +17,10 @@
 .mg-b-30 {
     margin-bottom: 30px;
 }
+
+.padding-y {
+  padding: 120px 0;
+}
 /* ---------------------- */
 .uppercase {
     text-transform: uppercase;
