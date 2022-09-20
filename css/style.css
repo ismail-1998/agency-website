@@ -496,9 +496,6 @@ nav li a:hover::after {
 /* End offer ------------------------------------------ */
 
 /* ((3.5)) Start Services ----------------------------- */
-.service {
-  padding: 20px 0;
-}
 
 .service-content {
   display: flex;
@@ -803,7 +800,6 @@ nav li a:hover::after {
 
 /* ((3.9)) Start Blog ------------------------------- */
 .blog {
-  padding: 30px 0;
   background-color: var(--grayColor);
 }
 
